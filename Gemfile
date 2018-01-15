@@ -15,7 +15,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'listen', '>= 3.0.5', '< 3.2'
 
-gem 'pg', '~> 0.11'
+gem 'pg'
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'jquery-rails'
 
