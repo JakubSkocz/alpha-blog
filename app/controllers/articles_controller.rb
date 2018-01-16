@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
 
 
   def index
-    @articles = Article.all
+    @articles = Article.all.order(created_at: :desc)
   end
 
   def new
@@ -12,7 +12,6 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    debugger
     @article = Article.new(article_params)
     @article.user = User.first
     if @article.save
